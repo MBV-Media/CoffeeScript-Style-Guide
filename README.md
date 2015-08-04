@@ -312,6 +312,7 @@ Highly inspired by [Airbnb JavaScript Style Guide](https://github.com/airbnb/jav
   if isTrue
       createPerson = ->
       return
+```
 
 **[⬆ back to top](#table-of-contents)**
 
