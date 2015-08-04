@@ -310,8 +310,8 @@ Highly inspired by [Airbnb JavaScript Style Guide](https://github.com/airbnb/jav
 ```coffeescript
   # Don't do this!
   if isTrue
-      createPerson = ->
-      return
+    createPerson = ->
+    return
 ```
 
 **[⬆ back to top](#table-of-contents)**
