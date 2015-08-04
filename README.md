@@ -97,9 +97,9 @@ Highly inspired by [Airbnb JavaScript Style Guide](https://github.com/airbnb/jav
 - [5.1](#5.1) Don't use trailing commas.
 ```coffeescript
   numbers = [
-      1
-      2
-      3
+    1
+    2
+    3
   ]
   mapping =
     a: 1
@@ -165,7 +165,7 @@ Highly inspired by [Airbnb JavaScript Style Guide](https://github.com/airbnb/jav
 - [8.1](#8.1) Use the literal syntax for object creation.
 ```coffeescript
   person =
-      name: 'John Doe'
+    name: 'John Doe'
 ```
 
 - [8.2](#8.2) Methods can return this to help with method chaining.
