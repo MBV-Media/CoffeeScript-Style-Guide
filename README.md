@@ -76,7 +76,8 @@ Highly inspired by [Airbnb JavaScript Style Guide](https://github.com/airbnb/jav
 
 - [3.3](#3.3) Use indentation when making long method chains. Use a leading dot, which emphasizes that the line is a method call, not a new statement.
 ```coffeescript
-  $('.items').addClass '.additional-class'
+  $('.items')
+  .addClass '.additional-class'
   .attr 'width', '110'
   .attr 'height', '150'
 ```
@@ -94,7 +95,7 @@ Highly inspired by [Airbnb JavaScript Style Guide](https://github.com/airbnb/jav
 
 
 ### Commas
-- [5.1](#5.1) Don't use trailing commas.
+- [5.1](#5.1) Don't use commas at all.
 ```coffeescript
   numbers = [
     1
@@ -288,21 +289,13 @@ Highly inspired by [Airbnb JavaScript Style Guide](https://github.com/airbnb/jav
   name = 'John Doe'
 ```
 
-- [11.2](#11.2) Strings longer than 100 characters should be written across multiple lines using string concatenation.
+- [11.2](#11.2) Strings, whose length exceeds the maximum amount of characters per line and would extend beyond the Right Margin (100 characters), should be split up and written across multiple lines using string concatenation.
 ```coffeescript
   description = 'I'm a very long text and need to be written across multiple lines using string ' + 
     'concatenation.'
 ```
 
-- [11.3](#11.3) **Note**: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40). 
-
-- [11.4](#11.4) When programmatically building up strings, use template strings instead of concatenation.
-```coffeescript
-  person =
-      name: 'John Doe',
-      walk: (meters) ->
-        return '${this.name} walked ${meters}m.'    
-```
+- [11.3](#11.3) **Note**: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40).
 
 
 ### Functions
